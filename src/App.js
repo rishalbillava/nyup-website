@@ -155,17 +155,30 @@ export default function EcommerceStore() {
 
             {/* Hero Text */}
             <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-center z-10">
-              <h1 className="text-7xl md:text-9xl font-black text-gray-800 mb-4" style={{
-                fontFamily: 'Impact, sans-serif',
-                WebkitTextStroke: '2px #fff',
-                textShadow: '0 10px 30px rgba(0,0,0,0.3)'
-              }}>
-                NYUP ANIME
-              </h1>
+              <div className="mb-4">
+                <h1 className="text-7xl md:text-9xl font-black relative leading-none" style={{
+                  fontFamily: 'Impact, sans-serif',
+                  color: '#FF8C00',
+                }}>
+                  <span className="absolute inset-0" style={{
+                    WebkitTextStroke: '2px #d2d2d2',
+                    color: 'transparent',
+                    textShadow: '0 10px 30px rgba(0,0,0,0.3)'
+                  }}>
+                    NYUP
+                  </span>
+                  <span style={{
+                    position: 'relative',
+                    zIndex: 1
+                  }}>
+                    NYUP
+                  </span>
+                </h1>
+              </div>
               <p className="text-xl text-gray-700 font-semibold mb-6">Oversized Anime T-Shirts</p>
               <button
                 onClick={() => setCurrentPage('catalog')}
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+                className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
               >
                 Shop Now
               </button>
